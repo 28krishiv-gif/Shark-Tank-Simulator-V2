@@ -191,7 +191,7 @@ text-decoration: none;
 display: inline-flex;
 justify-content: center;
 align-items:center;
-font-size: 16px;
+font-size: 24px;
 cursor: pointer;
 }
 </style>
