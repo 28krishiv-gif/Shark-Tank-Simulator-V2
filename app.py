@@ -257,6 +257,7 @@ if st.session_state.page=="home":
         st.rerun()
     with st.expander("How to Play"):
         instructions()
+    st.link_button("ⓘ", "https://github.com/28krishiv-gif/Shark-Tank-Simulator-V2/blob/main/README.md")
 elif st.session_state.page=="difficulty":
     st.session_state.is_added=False
     if not st.session_state.difficulties[0] or not st.session_state.difficulties[1] or not st.session_state.difficulties[2]:
