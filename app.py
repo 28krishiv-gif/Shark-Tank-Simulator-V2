@@ -261,32 +261,34 @@ if st.session_state.page=="home":
 <style>
 .info-button {
     position: fixed;
-    bottom: 25px;
+    bottom: 75px;
     right: 25px;
 
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
 
-    background-color: #0068c9;
+    background-color: #64748b;
     color: white !important;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 24px;
+    font-size: 21px;
     text-decoration: none !important;
+    z-index: 9999;
 }
 
 .info-button:hover {
-    background-color: #0054a3;
+    background-color: #475569;
 }
 </style>
 
 <a class="info-button"
    href="https://github.com/28krishiv-gif/Shark-Tank-Simulator-V2/blob/main/README.md"
-   target="_blank">
+   target="_blank"
+   title="About this project">
     ⓘ
 </a>
 """, unsafe_allow_html=True)
