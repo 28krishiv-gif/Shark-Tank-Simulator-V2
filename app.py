@@ -257,7 +257,39 @@ if st.session_state.page=="home":
         st.rerun()
     with st.expander("How to Play"):
         instructions()
-    st.link_button("ⓘ", "https://github.com/28krishiv-gif/Shark-Tank-Simulator-V2/blob/main/README.md")
+    st.markdown("""
+<style>
+.info-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: #0068c9;
+    color: white !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    text-decoration: none !important;
+}
+
+.info-button:hover {
+    background-color: #0054a3;
+}
+</style>
+
+<a class="info-button"
+   href="https://github.com/28krishiv-gif/Shark-Tank-Simulator-V2/blob/main/README.md"
+   target="_blank">
+    ⓘ
+</a>
+""", unsafe_allow_html=True)
 elif st.session_state.page=="difficulty":
     st.session_state.is_added=False
     if not st.session_state.difficulties[0] or not st.session_state.difficulties[1] or not st.session_state.difficulties[2]:
