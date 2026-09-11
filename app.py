@@ -177,9 +177,9 @@ st.markdown("""
 <style>
 .button {
 position: fixed;
-bottom: 20px;
+bottom: 70px;
 right:20px;
-background-color:gray;
+background-color:lightgray;
 border: none;
 color: white;
 width: 60px;
@@ -188,7 +188,9 @@ padding: 0;
 border-radius:50%;
 text-align: center;
 text-decoration: none;
-display: inline-block;
+display: inline-flex;
+justify-content: center;
+align-items:center;
 font-size: 16px;
 cursor: pointer;
 }
