@@ -175,38 +175,26 @@ if st.session_state.page=="Deal Terms":
 
 st.markdown("""
 <style>
-.info-button {
-    position: fixed;
-    bottom: 75px;
-    right: 25px;
-
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-
-    background-color: #64748b;
-    color: white !important;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 21px;
-    text-decoration: none !important;
-    z-index: 9999;
-}
-
-.info-button:hover {
-    background-color: #475569;
+.button {
+position: fixed;
+bottom: 20px;
+right:20px;
+background-color:gray;
+border: none;
+color: white;
+width: 60px;
+height: 60px;
+padding: 0;
+border-radius:50%;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+cursor: pointer;
 }
 </style>
 
-<a class="info-button"
-   href="https://github.com/28krishiv-gif/Shark-Tank-Simulator-V2/blob/main/README.md"
-   target="_blank"
-   title="About this project">
-    ⓘ
-</a>
+<a class="button" href="https://github.com/28krishiv-gif/Shark-Tank-Simulator-V2/blob/main/README.md">ⓘ</a>
 """, unsafe_allow_html=True)
 
 def instructions():
